@@ -48,7 +48,7 @@ restService.post('/health', function(req, res) {
     return res.json({
         speech: speech,
         displayText: speech,
-        source: 'webhook-echo-sample'
+        source: 'wellnessbot'
     });
 });
 
