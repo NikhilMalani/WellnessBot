@@ -1,7 +1,7 @@
 {
-  "name": "wellnessbot",
+  "name": "webhook-echo-sample",
   "version": "1.0.0",
-  "description": "wellnessbot",
+  "description": "Webhook echo sample",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
