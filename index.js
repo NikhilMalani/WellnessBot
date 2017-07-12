@@ -30,8 +30,8 @@ restService.post('/health', function(req, res) {
     var add = ((+q1 + +q2 + +q3 + +q4 + +q5 + +q6 + +q7 + +q8 + +q9 + +q10)/55)*100;
 	var finalScore = add.toFixed(2);
     var speech = finalScore ? "Thanks " + firstName + "! Your wellness score out of 100 is " + finalScore + ". Please check your inbox for some custom feedback - be sure to monitor your spam folder and mark as 'Not Spam'." : "Sorry, some error occurred.";
-    var api_key = 'key-dfed82d5fc390d4092d066c02542c4a5';
-    var domain = 'sandbox1a6a6686cad74e5880d94f7bf969406d.mailgun.org';
+    var api_key = 'key-d84d2750326f0a79dc52b95bff98fd61';
+    var domain = 'sandbox163f50fc3f2840f5a6e316f198b386e5.mailgun.org';
     var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
     var data = {
