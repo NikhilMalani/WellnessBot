@@ -13,8 +13,7 @@ restService.use(bodyParser.json());
 
 // bot service for health description
 restService.post('/health', function(req, res) {
-    // var speech = req.body.result && req.body.result.parameters && req.body.result.parameters.echoText ? req.body.result.parameters.echoText : "100"
-    let firstName = req.body.result && req.body.result.parameters && req.body.result.parameters.firstname;
+	let firstName = req.body.result && req.body.result.parameters && req.body.result.parameters.firstname;
     let lastName = req.body.result && req.body.result.parameters && req.body.result.parameters.lastname;
     let emailAddress = req.body.result && req.body.result.parameters && req.body.result.parameters.email;
 
@@ -48,7 +47,7 @@ restService.post('/health', function(req, res) {
     return res.json({
         speech: speech,
         displayText: speech,
-        source: 'wellnessbot'
+        source: 'webhook-echo-sample'
     });
 });
 
