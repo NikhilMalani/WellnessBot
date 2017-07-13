@@ -31,7 +31,7 @@ restService.post('/health', function(req, res) {
     var add = ((+q1 + +q2 + +q3 + +q4 + +q5 + +q6 + +q7 + +q8 + +q9 + +q10)/55)*100;
     var finalScore = add.toFixed(2);
     
-    var speech = finalScore ? "Thanks " + firstName + "! Your wellness score out of 100 is " + finalScore + ". Please check your inbox for some custom feedback - be sure to monitor your spam folder and please mark email as 'Not Spam'." : "Sorry, something seems to have gone wrong. Please start over.";
+    var speech = finalScore ? "Thanks " + firstName + "! Your wellness score out of 100 is " + finalScore + ". Please check your inbox for some custom feedback - be sure to monitor your spam folder and please mark email as 'Not Spam'." : "Sorry, something seems to have gone wrong. Please start over."
 
     // client mailgun key & domain name
     var api_key = 'key-dfed82d5fc390d4092d066c02542c4a5';
